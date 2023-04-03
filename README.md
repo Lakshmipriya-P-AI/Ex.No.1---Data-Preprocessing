@@ -32,10 +32,66 @@ Normalizing the data
 Splitting the data into test and train
 
 ## PROGRAM:
-/Write your code here/
+```
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+import pandas as pd
+df = pd.read_csv('Churn_Modelling.csv')
+df.head()
+le=LabelEncoder()
+df["CustomerId"]=le.fit_transform(df["CustomerId"])
+df["Surname"]=le.fit_transform(df["Surname"])
+df["CreditScore"]=le.fit_transform(df["CreditScore"])
+df["Geography"]=le.fit_transform(df["Geography"])
+df["Gender"]=le.fit_transform(df["Gender"])
+df["Balance"]=le.fit_transform(df["Balance"])
+df["EstimatedSalary"]=le.fit_transform(df["EstimatedSalary"])
+X=df.iloc[:,:-1].values
+print(X)
+Y=df.iloc[:,-1].values
+print(Y)
+print(df.isnull().sum())
+df.fillna(df.mean().round(1),inplace=True)
+print(df.isnull().sum())
+y=df.iloc[:,-1].values
+print(y)
+df.duplicated()
+print(df['Exited'].describe())
+scaler= MinMaxScaler()
+df1=pd.DataFrame(scaler.fit_transform(df))
+print(df1)
+x_train,x_test,y_train,x_test=train_test_split(X,Y,test_size=0.2)
+print(x_train)
+print(len(x_train))
+print(x_test)
+print(len(x_test))
+```
 
-## OUTPUT:
-/ Show the result/
+## OUTPUT
+### Printing first five rows and cols of given dataset:
+![229359845-cb939621-0459-43ec-89fd-a6f64954d8b9](https://user-images.githubusercontent.com/93427923/229425546-563d0c66-42b5-42c1-a356-b4370b37e9c3.png)
+
+### Seperating x and y values:
+![229359871-b0f2390f-7c2c-4475-9c06-77f9e02443d9](https://user-images.githubusercontent.com/93427923/229425566-8e86f835-e67f-4482-85ba-64210ccf04ba.png)
+
+### Checking NULL value in the given dataset:
+![229359905-7242ba39-daef-4fbe-b5a8-68b3fecfbc62](https://user-images.github![229360039-2e50d2bf-3ed3-49fa-bcb2-eb6b4abc2973](https://user-images.githubusercontent.com/93427923/229425603-1b427cac-3c84-4088-b500-eff4211a09c9.png)
+
+### Printing the Y column along with its discribtion:
+usercontent.com/93427923/229425587-64a9c83a-ff4b-492c-b958-aececa160d29.png)
+
+### Applying data preprocessing technique and printing the dataset:
+![229360121-85463e88-3fa5-4d1f-825f-4acddd762314](https://user-images.githubusercontent.com/93427923/229425939-b2713fc8-51f4-4f1d-9258-66d9e585fe12.png)
+
+### Printing training set:
+![229360208-dd9c0e8f-f1b2-4b13-8124-c8dbac7ad485](https://user-images.githubusercontent.com/93427923/229426024-9f0f64e4-b48e-474b-b878-66954f53cbe8.png)
+
+### Printing testing set and length of it:
+![229360244-28e2fa80-b67b-4431-aff2-1df167281f9c](https://user-images.githubusercontent.com/93427923/229426135-f2936ca5-cdbc-435f-b992-6d311b8d1818.png)
+
 
 ## RESULT
 /Type your result here/
