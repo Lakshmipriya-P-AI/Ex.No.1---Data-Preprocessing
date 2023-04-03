@@ -1,6 +1,6 @@
 # Ex.No.1---Data-Preprocessing
-## AIM:
 
+## AIM: 
 To perform Data preprocessing in a data set downloaded from Kaggle
 
 ##REQUIPMENTS REQUIRED:
@@ -75,13 +75,14 @@ print(len(x_test))
 ![229359845-cb939621-0459-43ec-89fd-a6f64954d8b9](https://user-images.githubusercontent.com/93427923/229425546-563d0c66-42b5-42c1-a356-b4370b37e9c3.png)
 
 ### Seperating x and y values:
-![229359871-b0f2390f-7c2c-4475-9c06-77f9e02443d9](https://user-images.githubusercontent.com/93427923/229425566-8e86f835-e67f-4482-85ba-64210ccf04ba.png)
+![229359871-b0f2390f-7c2c-4475-9c06-77f9e02443d9](https://user-images.githubusercontent.com/93427923/229426419-6ece0ea6-f7c8-4222-827b-ed14b6c94ab3.png)
+
 
 ### Checking NULL value in the given dataset:
-![229359905-7242ba39-daef-4fbe-b5a8-68b3fecfbc62](https://user-images.github![229360039-2e50d2bf-3ed3-49fa-bcb2-eb6b4abc2973](https://user-images.githubusercontent.com/93427923/229425603-1b427cac-3c84-4088-b500-eff4211a09c9.png)
+![229359905-7242ba39-daef-4fbe-b5a8-68b3fecfbc62](https://user-images.githubusercontent.com/93427923/229426335-a8f1f6c2-58d1-4aa0-abc8-321ac895021d.png)
 
 ### Printing the Y column along with its discribtion:
-usercontent.com/93427923/229425587-64a9c83a-ff4b-492c-b958-aececa160d29.png)
+![229360039-2e50d2bf-3ed3-49fa-bcb2-eb6b4abc2973](https://user-images.githubusercontent.com/93427923/229426455-76b81b28-5d87-4ed6-a580-6c7771be146c.png)
 
 ### Applying data preprocessing technique and printing the dataset:
 ![229360121-85463e88-3fa5-4d1f-825f-4acddd762314](https://user-images.githubusercontent.com/93427923/229425939-b2713fc8-51f4-4f1d-9258-66d9e585fe12.png)
@@ -94,4 +95,4 @@ usercontent.com/93427923/229425587-64a9c83a-ff4b-492c-b958-aececa160d29.png)
 
 
 ## RESULT
-/Type your result here/
+Hence the data preprocessing is done using the above code and data has been splitted into trainning and testing data for getting a better model.
