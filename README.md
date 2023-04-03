@@ -24,14 +24,13 @@ Another aspect is that the data set should be formatted in such a way that more 
 
 
 ## ALGORITHM:
-*\
 Importing the libraries
 Importing the dataset
 Taking care of missing data
 Encoding categorical data
 Normalizing the data
 Splitting the data into test and train
-\*
+
 
 ## PROGRAM:
 ```
@@ -94,7 +93,6 @@ print(len(x_test))
 
 ### Printing testing set and length of it:
 ![229360244-28e2fa80-b67b-4431-aff2-1df167281f9c](https://user-images.githubusercontent.com/93427923/229426135-f2936ca5-cdbc-435f-b992-6d311b8d1818.png)
-
 
 ## RESULT
 Hence the data preprocessing is done using the above code and data has been splitted into trainning and testing data for getting a better model.
